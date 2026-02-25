@@ -113,7 +113,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease-in-out ;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -160,8 +160,6 @@ table {
         width: 50%;
     }
 
-
-/* MEDIA QUERIES (LARGE) */
 @media (min-width: 1200px) {
 }
 }
