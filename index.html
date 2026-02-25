@@ -11,16 +11,15 @@
 </head>
 
 <body>
-<!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
     <header>
     <img src="images/vanguard-logo.svg" alt="vanguard-logo" style="max-width: 200px; display: block; margin: 0 auto;">
     <h1>Vaanguard</h1>
 <nav>
 <p>Main Navigation</p>
             <ul style="list-style-type: none; padding: 0; text-align: center;">
-                <li style="display: inline; margin-right: 20px;"><a href="#">About</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#">Services</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
 </nav>
     </header>
@@ -99,32 +98,37 @@
                         <div class="bar" data-year="2023" style="--height: 85%;"></div>
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
-</body>
-        <h1>Contact Us</h1>
-        <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-            <form action="/submit" method="post">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full_name" required><br><br>
-        
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br><br>
-        
-                <label for="company-name">Company Name:</label>
-                <input type="text" id="company-name" name="company_name" required><br><br>
-        
-                <label for="industry">Industry:</label>
-                <input type="text" id="industry" name="industry" required><br><br>
-        
-                <label for="help">How can we help you?</label><br>
-                <textarea id="help" name="help" rows="4" cols="50" required></textarea><br><br>
-        
-                <input type="submit" value="Submit">
-            </form>
+                </div>
+            
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <form action="/submit" method="post">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company_name" required>
+
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" name="industry" required>
+
+                    <label for="help">How can we help you?</label>
+                    <textarea id="help" name="help" rows="4" cols="50" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
         <footer>
         <p>For educational purposes only. </p>
         <p>Email: <a href="info@vaanguard.com">info@vaanguard.com</a></p> 
         <p>Phone: <a href="tel:+14801234567">480.123.4567</a></p>
         </footer>
-        
-</footer>
+</body>
 </html>

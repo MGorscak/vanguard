@@ -85,9 +85,18 @@ body {
     padding: 1rem;
     overflow: hidden;
 }
+#innovation-investment h1 {
+    font-size: 2.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
 
+#innovation-investment p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-#innovation-section h1::before {
+#innovation-investment h1::before {
     content: "";
     position: absolute;
     left:-.5rem;
@@ -96,6 +105,29 @@ body {
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
+#expertise-section, #offer-section, #contact {
+    padding: 3rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#offer-section {
+    background: var(--white);
+    color: var(--charcoal);
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
