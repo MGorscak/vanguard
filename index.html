@@ -82,24 +82,31 @@
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
 </body>
-<footer>
-        Contact Us
-        Want to take your business to the next level? Get in touch with our elite team today.
-
-            Full Name
-
-            Email Address
-
-            Company Name
-
-            Industry
-
-            How can we help you?
-
-            Submit
-
-        For educational purposes only. 
-        Email: info@vaanguard.com 
-        Phone: 480.123.4567
+        <h1>Contact Us</h1>
+        <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+            <form action="/submit" method="post">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required><br><br>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company_name" required><br><br>
+        
+                <label for="industry">Industry:</label>
+                <input type="text" id="industry" name="industry" required><br><br>
+        
+                <label for="help">How can we help you?</label><br>
+                <textarea id="help" name="help" rows="4" cols="50" required></textarea><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        <footer>
+        <p>For educational purposes only. </p>
+        <p>Email: <a href="info@vaanguard.com">info@vaanguard.com</a></p> 
+        <p>Phone: <a href="tel:+14801234567">480.123.4567</a></p>
+        </footer>
+        
 </footer>
 </html>
