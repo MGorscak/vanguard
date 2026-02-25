@@ -141,7 +141,10 @@ table {
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
+@media (min-width: 768px) {
+    #results {
+        grid-template-columns: 1fr 1fr;
+    }
 
     #results {
         grid-template-columns: 1fr 1fr;
@@ -159,3 +162,6 @@ table {
 
 
 /* MEDIA QUERIES (LARGE) */
+@media (min-width: 1200px) {
+}
+}
