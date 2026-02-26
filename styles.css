@@ -1,4 +1,5 @@
 /* CSS BY MIKAEL GORSCAK */
+
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -64,11 +65,16 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-width: 400px;
     font-family: var(--font);
     color: var(--charcoal);
     line-height: 1.5;
+    background: var(--white);
 }
 
 .container {
@@ -100,6 +106,19 @@ header .container {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
+}
+
+.menu-toggle {
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+nav {
+    display: none;
 }
 
 nav ul {
@@ -298,6 +317,7 @@ input, textarea {
     border-radius: 5px;
     background: var(--white);
     color: var(--charcoal);
+    width: 100%;
 }
 
 input[type="submit"] {
@@ -307,6 +327,7 @@ input[type="submit"] {
     cursor: pointer;
     margin-top: 1.5rem;
     font-weight: bold;
+    width: 100%;
 }
 
 footer {
@@ -327,16 +348,20 @@ footer a {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     #results {
         grid-template-columns: 1fr 1fr;
-    }
-
-    nav ul {
-        display: flex;
     }
 }
 
